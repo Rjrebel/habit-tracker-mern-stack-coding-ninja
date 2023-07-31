@@ -4,7 +4,7 @@ import HabitContext from "../context/HabitContext";
 
 const HabitItem = ({ habit }) => {
   // Delete habit handler
-  const deleteX = () => {
+  const deleteX = () => { 
     deleteHabit(habit._id);
   };
 

@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
+
 
 main().catch(err => console.log(err));
+
+
+
 
 main().then( () => {
     console.log("Connected to mongoDB successfully.");
@@ -8,5 +13,5 @@ main().then( () => {
 
 // connecting to MongoDB server
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/habit_tracker');
-}
+  await mongoose.connect(process.env.DB_URI);
+}  
