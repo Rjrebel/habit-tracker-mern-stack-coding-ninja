@@ -4,7 +4,7 @@ import HabitContext from "./HabitContext";
 const HabitState = (props) => {
   const [habits, setHabits] = useState([]);
 
-  const host = "http://localhost:1809";
+  const host = "https://the-habit-tracker.onrender.com";
 
   // Fetching habits from backend
   const getHabits = async () => {
